@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Bug Recorder",
+    "version": "1.0",
+    "description": "Record bug names and save them to a bookmark folder.",
+    "browser_action": {
+      "default_icon": "/icon/icon16.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon/icon16.png",
+        "32": "icon/icon32.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+      },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "bookmarks"
+    ]
+  }
+  

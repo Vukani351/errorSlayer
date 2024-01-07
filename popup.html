@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bug Recorder</title>
+        <link rel="stylesheet" href="popup.css">
+       
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h2>Bug Recorder</h2>
+        
+        <div class="omrs-input-group">
+            <label class="omrs-input-underlined">
+                <input required id="bugName">
+                <span class="omrs-input-label">Error Name:</span>
+                <span class="omrs-input-helper">Enter the bug name</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-5-6c.78 2.34 2.72 4 5 4s4.22-1.66 5-4H7z"/></svg>
+            </label>
+            <br>
+            <br>
+            
+            <div class="omrs-input-group">
+                <label class="omrs-input-filled omrs-input-danger">
+                    <input required type="text" id="url">
+                    <span class="omrs-input-label">Current Tab URL:</span>
+					<span class="omrs-input-helper">(OPTIONAL) Edit Error URL:</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-5-6c.78 2.34 2.72 4 5 4s4.22-1.66 5-4H7z"/></svg>
+				</label>
+			</div>
+            <button id="saveBug" class="btn btn-4 btn-sep">Save Error </button>
+        </div>
+        
+        
+        <script src="popup.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </body>
+</html>
